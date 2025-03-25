@@ -1,4 +1,4 @@
-# Vaulted's Solana Wallet Activity Checker
+# Vaulted's Activity Checker
 
 A Python script that checks Solana wallet addresses for recent activity (within the last 2 weeks).
 
@@ -65,5 +65,5 @@ The script will create two JSON files:
 
 ## Credits
 
-Created by @vaulted0 
-If you would like to support me --> FGcKb4EQPNp12DoBfp12fwx1abBqQzqYBGuyRqVau1t
+- Created by @vaulted0 
+- If you would like to support me --> FGcKb4EQPNp12DoBfp12fwx1abBqQzqYBGuyRqVau1t
