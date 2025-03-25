@@ -28,7 +28,7 @@ A Python script that checks Solana wallet addresses for recent activity (within 
 
 ## Usage
 
-1. Create a `wallets.txt` file in the same directory as the script
+1. A `wallets.txt` file has been created for you already
 2. Add Solana wallet addresses to `wallets.txt`, one per line
 3. Run the script:
    ```
