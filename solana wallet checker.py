@@ -87,12 +87,24 @@ def get_wallet_transactions(wallet_address, rpc_endpoint=None, max_retries=3):
 def check_wallet_with_all_nodes(wallet_address):
     """Check a wallet's activity across all RPC nodes"""
     print(f"\nPerforming thorough check for wallet: {wallet_address}")
+    two_weeks_ago = datetime.now() - timedelta(days=14)
+    
     for endpoint in RPC_ENDPOINTS:
         print(f"\nTrying endpoint: {endpoint}")
         transactions = get_wallet_transactions(wallet_address, endpoint)
         if transactions is not None:  # If we got a valid response
             if transactions:  # If we found transactions
-                return True  # Wallet is active
+                # Check if any transaction is within the last 2 weeks
+                for tx in transactions:
+                    tx_time = datetime.fromtimestamp(tx['blockTime'])
+                    if tx_time >= two_weeks_ago:
+                        print(f"Found recent activity from {tx_time}")
+                        return True  # Wallet is active
+                print("Found transactions but none are recent")
+            else:
+                print("No transactions found")
+        else:
+            print("Failed to get response from endpoint")
     return False  # All nodes returned inactive or failed
 
 def filter_active_wallets(wallet_list):
