@@ -47,7 +47,7 @@ The script will create two JSON files:
 ```json
 [
   {
-    "trackedWalletAddress": "A15bMkVFXtkBpmpZGifFXYG3ctzqeyD3S7iDGt1bekXh",
+    "trackedWalletAddress": "4jeg1JVXoKJUaPdTLYYXP9xq93buUk3AsfHy9KEcH8BE",
     "name": "Example Wallet",
     "emoji": "👻",
     "alertsOn": false
@@ -66,3 +66,4 @@ The script will create two JSON files:
 ## Credits
 
 Created by @vaulted0 
+If you would like to support me --> FGcKb4EQPNp12DoBfp12fwx1abBqQzqYBGuyRqVau1t
