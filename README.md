@@ -1,4 +1,4 @@
-# Solana Wallet Activity Checker
+# Vaulted's Solana Wallet Activity Checker
 
 A Python script that checks Solana wallet addresses for recent activity (within the last 2 weeks).
 
