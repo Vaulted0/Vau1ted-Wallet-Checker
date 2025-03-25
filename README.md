@@ -30,7 +30,7 @@ A Python script that checks Solana wallet addresses for recent activity (within 
 ## Usage
 
 1. Create a `wallets.json` file in the same directory as the script
-2. Add wallet data in JSON format (see example below)
+2. Add wallet data in JSON format (see example below, exporting from any major platform will work!)
 3. Run the script:
    ```
    python "solana wallet checker.py"
